@@ -1,0 +1,28 @@
+{
+  "name": "bikayi_be_assignment",
+  "version": "1.0.0",
+  "description": "Bikayi Backend Assignment",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./server.js localhost 4000",
+
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anishdutta/Bikayi_BE_Assignment.git"
+  },
+  "author": "Anish Dutta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anishdutta/Bikayi_BE_Assignment/issues"
+  },
+  "homepage": "https://github.com/anishdutta/Bikayi_BE_Assignment#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "mongodb": "^4.3.1",
+    "mongoose": "^6.1.8",
+    "nodemon": "^2.0.15"
+  }
+}
