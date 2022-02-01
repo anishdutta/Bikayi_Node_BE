@@ -2,6 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 //Initialize express app
 var ObjectID = require("mongodb").ObjectID;
+require("dotenv").config();
 
 const app = express();
 //Initialize the sever
@@ -15,7 +16,7 @@ const getDetails = require('./routes/getDetails');
 const addDetails = require('./routes/addDetails');
 
 const { MongoClient } = require('mongodb');
-const uri = "mongodb+srv://anishdutta:deep2000@cluster0.vvixz.mongodb.net/Bikayi_BE?retryWrites=true&w=majority";
+const uri = process.env.uri;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.connect(`${uri}`, {useNewUrlParser: true, useUnifiedTopology: true
 }).then(() => {
